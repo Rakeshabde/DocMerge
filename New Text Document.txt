@@ -1,0 +1,2 @@
+first open cd client and run npm start
+then opne cd server and run nodemon
