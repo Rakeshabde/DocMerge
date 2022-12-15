@@ -57,18 +57,6 @@ const toolbarOptions = [
   
     ['clean']                                         // remove formatting button
   ];
-  
- // Add fonts to whitelist
-var Font = Quill.import('formats/font');
-Font.whitelist = fontNames;
-Quill.register(Font, true);
-
-var quill = new Quill('#editor', {
-    modules: {
-        toolbar: toolbarOptions
-    },
-    theme: 'snow'
-});
 
 const Editor = () => {
     const [socket, setSocket] = useState();
