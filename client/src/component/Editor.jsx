@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { saveAs } from 'file-saver';
 import { pdfExporter } from 'quill-to-pdf';
+import * as quillToWord from 'quill-to-word';
 // import * as quill from 'quilljs';
 
 const Component = styled.div`
@@ -168,7 +169,12 @@ const Editor = () => {
         saveAs(pdfAsBlob, 'pdf-export.pdf'); // downloads from the browser
     }
     async function exportWord(){
-        
+        const del = quillServer.getContents(); // gets the Quill delta
+        const quillToWordConfig = {
+            exportAs: 'blob'
+        };
+        const docAsBlob = await quillToWord.generateWord(del, quillToWordConfig);
+        saveAs(docAsBlob, 'word-export.docx');
     }
 }
 
