@@ -14,14 +14,10 @@ import Stack from '@mui/material/Stack';
 import { saveAs } from 'file-saver';
 import { pdfExporter } from 'quill-to-pdf';
 import * as quillToWord from 'quill-to-word';
-// import * as quill from 'quilljs';
 
 const Component = styled.div`
 background : #F5F5F5
 `
-
-
-
 {
     // specify the fonts you would 
     var fonts = ['Arial', 'Courier', 'Garamond', 'Tahoma', 'Times New Roman', 'Verdana', 'Impact', 'Futura', 'Bodoni'];
