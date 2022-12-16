@@ -17,4 +17,21 @@
   box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
 }
 
+#pdfbtn{
+  text-align: center;
+  margin: auto;
+  background: #f3f3f3;
+  border: none !important;
+  color: blue;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
 
+
+#wordbtn{
+  text-align: center;
+  margin: auto;
+  background: #f3f3f3;
+  border: none !important;
+  color: blue;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
